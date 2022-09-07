@@ -19,14 +19,3 @@ window.addEventListener('scroll', () =>{
     }
 })
 
-
-function func(sentence){
-    let arr = [];
-    for(let i of sentence){
-        arr.push(i.split(' ').length);
-    }
-    return Math.max(...arr);
-}
-
-console.log(func(["alice and bob love leetcode", "i think so too", "this is great thanks very much"]))
-
