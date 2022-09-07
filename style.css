@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: grey;
+    height: 1000px;
+    overflow-x: hidden;
+}
+
+.sphere{
+    width: 400px;
+    height: 400px;
+    background-color: #713d2f;
+    border-radius: 50%;
+    opacity: .3;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+}
+
+.square{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: #713d2f;
+    opacity: .3;
+    transform: rotate(120deg);
+    top: 50%;
+    left: -5%;
+}
+
+.main-block{
+    width: 100%;
+    height: 729px;  
+    background-color: #E27D60;
+}
+
+.navbar-section{
+    width:100%;
+    height: 120px;
+    padding: 30px 0px;
+    display: inline-flex;
+    position: fixed;
+    transition: .5s;
+    z-index: 2;
+}
+
+.navbar-header{
+    width: 10%;
+    height: 50px;
+    padding: 1.5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brend{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.navbar-brend:hover{
+    transform: rotateY(180deg);
+}
+
+.navbar-list{
+    width: 40%;
+    height: 50px;
+    padding: 15px 0px;
+    margin-left: 13%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style:none;
+}
+
+ul > li{
+    padding: 0% 5%;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.link:hover{
+    color: #60C5E2;
+}
+
+.navbar-sign-in{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn{
+    height: 100%;
+    width: 40%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(44, 44, 44);
+    color: #E27D60;
+}
+
+.login-btn:hover{
+    color: #44B4B4 ;
+}
+
+.background{
+    background-color: white;
+}
+
+.color-header{
+    color:black;
+}
+
+.color-link{
+    color: rgb(69, 69, 69);
+}
+
+.info-block{
+    width: 600px;
+    height: 400px;
+    border: 2px white solid;
+    position: relative;
+    top: 25%;
+    left: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.info-block:hover{
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.info-title{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.info-title > h2{
+    font-size: 2rem;
+    z-index: 1;
+    color: white; 
+    font-weight: lighter;
+}
+
+.about-block{
+    width: 100%;
+    height: 729px;
+    background-color: #ACC8E5;
+}
+
+.about-header{
+    text-align: center;
+    padding-top: 10%;
+    color: #112A46;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.text-container{
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+    width: 80%;
+    height: 300px;
+    border: 1px white solid;
+    transition: .5s;
+}
+
+.text-container:hover{
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.about-text{
+    color: #112A46;
+    font-size: 1.3rem;
+}
+
+.our-work{
+    width: 100%;
+    height: 729px;
+    background: rgb(181,185,185);
+    background: radial-gradient(circle, rgba(181,185,185,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.work-div{
+    width: 22%;
+    height: 400px;
+    background-color: cyan;
+    margin: 1%;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.work-div:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 20px black;
+}
+
+.image-container{
+    width: 100%;
+    height: 200px;
+    background-image: url('https://mobirise.com/assets52/images/poster.png');
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.desc{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    padding: 2%;
+}
+
+.btn-container{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px black solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btn-container > button{
+    padding: 2% 6%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .5s;
+}
+
+.btn-container > button:hover{
+    transform: scale(1.2);
+}
+
+.log-in{
+    width: 25%;
+    height: 400px;
+    background-color: red;
+    position: absolute;
+    position: fixed;
+    top: 20%;
+    left: 35%;   
+    text-align: center; 
+    display: none;;
+}
+
+.btn-close{
+    width: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.5rem; 
+    position: absolute;
+    left: 92%;
+    cursor: pointer;
+}
+
+.log-in > h1{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 5%;
+}
+
+.username{
+    width: 230px;
+    height: 40px;
+    font-size: 1.3rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
+.password{
+    width: 230px;
+    height: 40px;
+    font-size: 1.3rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
